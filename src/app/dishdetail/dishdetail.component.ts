@@ -15,7 +15,12 @@ export class DishdetailComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-  
+    console.log(this.selectedDish)
+    this.interval
   }
+   interval = setInterval(function() {
+   console.log(this.dish);
+  }, 5000);
+  
 
 }
